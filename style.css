@@ -93,7 +93,7 @@ button:hover {
   background-color: transparent;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 580px) {
   main{
     flex-direction: column-reverse;
     align-items: center;
@@ -113,7 +113,7 @@ button:hover {
     text-align: center;
   }
  button{
-  min-width: 300px;
+  max-width: 300px;
  }
 /* .riddle-content,.quote-content,.joke-content {
    text-align: center;
