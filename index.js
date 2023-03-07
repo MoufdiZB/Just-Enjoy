@@ -25,7 +25,6 @@ function showMeme() {
 function showJoke() {
   const randomJoke = getRandomData("jokes");
   const newP = document.createElement("p");
-  newP.setAttribute("id", "joke");
   newP.textContent = randomJoke;
   clearAll();
   document.querySelector(".joke-content").appendChild(newP);
@@ -35,8 +34,6 @@ function showQuote() {
   const randomQuote = getRandomData("quotes");
   newQuote = document.createElement("p");
   newAuthor = document.createElement("p");
-  newAuthor.setAttribute('id','author');
-  newQuote.setAttribute("id", "quote");
   newQuote.textContent = randomQuote.quote;
   newAuthor.textContent ='- '+randomQuote.author;
   console.log(randomQuote.quote);

@@ -9,9 +9,8 @@ body {
   margin: 0;
 }
 
-main {
+.container{
   display: flex;
-  flex-direction: row;
 }
 
 img {
@@ -25,7 +24,7 @@ p {
   color: #8097A6;
 }
 
-.attribution {
+/* .attribution {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -35,7 +34,7 @@ p {
   border-radius: 5px;
   color: #1D2326;
   box-shadow: 1px 2px 5px 1px rgba(255,255,255, 0.2);
-}
+} */
 
 a {
   color: white;
@@ -93,29 +92,28 @@ button:hover {
   background-color: transparent;
 }
 
-@media (max-width: 580px) {
-  main{
-    flex-direction: column-reverse;
+@media only screen and (max-width: 580px) {
+.container{
+    flex-direction: column-reverse  ;
     align-items: center;
-
   }
   .sidebar{
     border: 0;
     text-align: center;
     align-items: center;
     height: auto;
-  
   }
   .content {
     width:100%;
-    padding-left: 0px;
-    padding-right: 0px;
     text-align: center;
+  }
+  .content p{
+    margin: auto;
+    max-width: 70%;
   }
  button{
   max-width: 300px;
  }
-/* .riddle-content,.quote-content,.joke-content {
-   text-align: center;
- } */
+
+
 }
